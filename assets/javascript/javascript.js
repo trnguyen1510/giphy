@@ -40,7 +40,7 @@ $( document ).ready(function() {
     // Function that displays all of the gifs
     function displayGifs(){
         var movie = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=xf6PYSpLISBBfgFrXzOI8FeOEJDY0pCX&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=xf6PYSpLISBBfgFrXzOI8FeOEJDY0pCX&limit=10";
         console.log(queryURL); // displays the constructed url
         $.ajax({
             url: queryURL,
